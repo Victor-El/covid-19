@@ -1,10 +1,16 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(to right, #ccc, #eee);
+  font-family: sans-serif;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.custom-nav-link {
+  color: #dddddd;
 }
 
 @media (prefers-reduced-motion: no-preference) {
