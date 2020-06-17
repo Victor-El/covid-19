@@ -13,6 +13,7 @@ class HomeCaseCard extends Component {
                     <Card.Body>
                         <Card.Title><h2 style={{color: '#cc9300', fontWeight: 'bold'}}>{this.props.title}</h2></Card.Title>
                         <Card.Text><h3 style={{color: process.env.REACT_APP_ACCENT_COLOR}}>{this.props.text}</h3></Card.Text>
+                        <Card.Subtitle>{`${Math.floor((this.props.val / this.props.totalCases) * 100)}%`}</Card.Subtitle>
                     </Card.Body>
                 </Card>
             </>

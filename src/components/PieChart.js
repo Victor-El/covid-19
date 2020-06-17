@@ -22,7 +22,7 @@ class PieChart extends Component {
 
     render() {
         return (
-            <canvas ref={this.chartRef}></canvas>
+            <canvas ref={this.chartRef} />
         );
     }
 }

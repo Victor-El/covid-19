@@ -16,14 +16,12 @@ function App() {
   return (
       <AppContext.Provider value={{
           state: {
-              countryList: [], setCountryList: (list) => {
-                  this.countryList = list;
-                  console.log(this.countryList);
-              },
               country: countryMain,
               setCountry: function (val) {
                   setCountryMain(val);
-                  console.log(this.country);
+                  console.log("State Value", countryMain);
+                  console.log("Object Value", this.country);
+                  console.log("State Value", countryMain);
               }
           }
       }}>

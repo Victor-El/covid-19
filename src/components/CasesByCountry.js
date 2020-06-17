@@ -38,13 +38,13 @@ class CasesByCountry extends Component {
         return (
             this.state.listOfCountries.length < 1 ? <CustomSpinner/> : <>
                 <AppContext.Consumer>
-                    {(context) => <Container fluid>
+                    {(context) => <Container style={{paddingBottom: '100px', minHeight: '100vh'}} fluid>
                         <Row>
                             <Col>
                                 <h1 style={{
                                     color: process.env.REACT_APP_ACCENT_COLOR,
                                     fontFamily: 'san-serif',
-                                    margin: '10px',
+                                    margin: '10px 0px',
                                     fontWeight: 'bolder',
                                     border: '2px solid gray',
                                     borderRadius: '2px'
@@ -53,7 +53,7 @@ class CasesByCountry extends Component {
                         </Row>
                         <Row>
                             {this.state.listOfCountries.filter((list) => list.country.toLowerCase().includes(context.state.country.toLowerCase())).map((value, index) =>
-                                <Col key={index} md={6} lg={4} xl={4} style={{marginBottom: '25px'}}>
+                                <Col key={index} md={6} lg={3} xl={3} style={{marginBottom: '25px'}}>
                                     <CaseByCountry country={value.country}
                                                    img={value.countryInfo.flag}
                                                    cases={value.cases}
@@ -66,7 +66,8 @@ class CasesByCountry extends Component {
                                                    casesPerMil={value.casesPerOneMillion}
                                                    deathsPerMil={value.deathsPerOneMillion}
                                                    lat={value.countryInfo.lat}
-                                                   long={value.countryInfo.long}/>
+                                                   long={value.countryInfo.long} test={value.tests}
+                                                   testsPerMil={value.testsPerOneMillion}/>
                                 </Col>)}
                         </Row>
                     </Container>}
