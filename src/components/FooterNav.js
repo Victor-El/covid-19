@@ -24,34 +24,34 @@ class FooterNav extends Component {
                     //bottom: '0',
                     backgroundColor: process.env.REACT_APP_ACCENT_COLOR
                 }} fluid>
-                    {this.props.history.location.pathname === '/' ? <Row>
-                        <Col>
-                            <h5 style={{
-                                backgroundColor: process.env.REACT_APP_ACCENT_COLOR,
-                                color: process.env.REACT_APP_PRIMARY_COLOR,
-                                fontWeight: 'bold'
-                            }}>Quick Links</h5>
-                        </Col>
+                    {/*{this.props.history.location.pathname === '/' ? <Row>*/}
+                    {/*    <Col>*/}
+                    {/*        <h5 style={{*/}
+                    {/*            backgroundColor: process.env.REACT_APP_ACCENT_COLOR,*/}
+                    {/*            color: process.env.REACT_APP_PRIMARY_COLOR,*/}
+                    {/*            fontWeight: 'bold'*/}
+                    {/*        }}>Quick Links</h5>*/}
+                    {/*    </Col>*/}
 
-                    </Row> : null}
-                    {this.props.history.location.pathname === '/' ? <Row>
-                        <Col sm={12} xs={12} xl={6} lg={6} md={6}>
-                            <NavLink className='custom-nav-link' href='/news'>News</NavLink>
-                        </Col>
+                    {/*</Row> : null}*/}
+                    {/*{this.props.history.location.pathname === '/' ? <Row>*/}
+                    {/*    <Col sm={12} xs={12} xl={6} lg={6} md={6}>*/}
+                    {/*        <NavLink className='custom-nav-link' href='/news'>News</NavLink>*/}
+                    {/*    </Col>*/}
 
-                        <Col sm={12} xs={12} xl={6} lg={6} md={6}>
-                            <NavLink className='custom-nav-link' href='/analytics'>Analytics</NavLink>
-                        </Col>
-                    </Row> : null}
-                    {this.props.history.location.pathname === '/' ? <Row>
-                        <Col sm={12} xs={12} xl={6} lg={6} md={6}>
-                            <NavLink className='custom-nav-link' href='/country-cases'>Cases by Country</NavLink>
-                        </Col>
+                    {/*    <Col sm={12} xs={12} xl={6} lg={6} md={6}>*/}
+                    {/*        <NavLink className='custom-nav-link' href='/analytics'>Analytics</NavLink>*/}
+                    {/*    </Col>*/}
+                    {/*</Row> : null}*/}
+                    {/*{this.props.history.location.pathname === '/' ? <Row>*/}
+                    {/*    <Col sm={12} xs={12} xl={6} lg={6} md={6}>*/}
+                    {/*        <NavLink className='custom-nav-link' href='/country-cases'>Cases by Country</NavLink>*/}
+                    {/*    </Col>*/}
 
-                        <Col sm={12} xs={12} xl={6} lg={6} md={6}>
-                            <NavLink className='custom-nav-link' href='/about'>About</NavLink>
-                        </Col>
-                    </Row> : null}
+                    {/*    <Col sm={12} xs={12} xl={6} lg={6} md={6}>*/}
+                    {/*        <NavLink className='custom-nav-link' href='/about'>About</NavLink>*/}
+                    {/*    </Col>*/}
+                    {/*</Row> : null}*/}
                     <div>
                         <NavLink className='custom-nav-link' href='https://github.com/'>
                             Open source project developed with <FaHeart style={{color: 'red'}}/>
