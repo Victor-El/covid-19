@@ -34,7 +34,7 @@ function App() {
                   <Route path="/analytics" component={Analytics}/>
                   <Route path="/country-cases" component={CasesByCountry}/>
                   <Route path='/news' component={News}/>
-                  <Route path='/' component={Index}/>
+                  <Route path='/' component={Home}/>
                   <Route component={Error}/>
               </Switch>
               <FooterNav/>
