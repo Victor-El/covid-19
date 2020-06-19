@@ -10,6 +10,8 @@ import {Link} from "react-router-dom";
 import withRouter from "react-router-dom/es/withRouter";
 import {AppContext} from "../index";
 
+import logo from "../assets/logo512.png";
+
 class NavBar extends Component {
 
     constructor(props) {
@@ -29,7 +31,21 @@ class NavBar extends Component {
             <>
                 <AppContext.Consumer>
                     {(context) => <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky='top'>
-                        <Navbar.Brand href="#home"><Link to='/'><h2
+                        <Navbar.Brand style={{
+                            display: "flex",
+                            flexDirection: "row",
+                            alignItems: "center",
+                            justifyContent: "center"
+                        }} href="#home">
+                            <img
+                                alt=""
+                                src={logo}
+                                style={{margin: "3px"}}
+                                width="50"
+                                height="50"
+                                className="d-inline-block align-top"
+                            />
+                            <Link to='/'><h2
                             style={{color: '#ffd700', fontWeight: 'bolder'}}>COVID-19</h2></Link></Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                         <Navbar.Collapse id="responsive-navbar-nav">
