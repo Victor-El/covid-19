@@ -13,8 +13,6 @@ class News extends Component {
 
     componentDidMount() {
         getAllNews().then((data) => {
-            console.log(data);
-
             this.setState((state, props) => ({
                 articles: data.articles
                 // source: data.articles[0].source,

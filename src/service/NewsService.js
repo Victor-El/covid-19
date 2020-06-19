@@ -15,7 +15,7 @@ const getDateFromAMonthAgo = () => {
 const getAllNews = async () => {
     const date = getDateFromAMonthAgo();
     const axiosInstance = axios.create({
-        baseURL: `http://newsapi.org/v2/top-headlines/?q=${REQUEST_QUERY}&from=${date}`,
+        baseURL: `https://newsapi.org/v2/top-headlines/?q=${REQUEST_QUERY}&from=${date}`,
         timeout: 3000,
         headers: {'Authorization': `Bearer ${process.env.REACT_APP_NEWS_API_KEY}`}
     });
