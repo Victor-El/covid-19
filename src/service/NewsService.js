@@ -21,7 +21,7 @@ import {
 
 // This tries as much as possible to return saved value else returns null and shows warning alert to the user
 const getAllNews = async () => {
-    const cacheDate = localStorage.getItem(LOCAL_STORAGE_NAME_FOR_CACHE_DATE) ? new Date(JSON.parse(localStorage.getItem(LOCAL_STORAGE_NAME_FOR_CACHE_DATE))) : new Date();
+    const cacheDate = localStorage.getItem(LOCAL_STORAGE_NAME_FOR_CACHE_DATE) ? new Date(JSON.parse(localStorage.getItem(LOCAL_STORAGE_NAME_FOR_CACHE_DATE))) : new Date() - 60 * 60 * 24;
     const currentDate = new Date();
 
     //const date = getDateFromAMonthAgo();
