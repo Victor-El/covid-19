@@ -36,9 +36,8 @@ class News extends Component {
                     <Container style={{paddingBottom: '100px', minHeight: '100vh', margin: "0 auto"}} fluid>
                         <Row style={{margin: "0 auto"}} xl={4} lg={4} md={2} sm={1} xs={1}>
                             {this.state.articles.map((obj) => <Col>
-                                <NewsItem source={obj.source} title={obj.title} author={obj.author}
-                                          description={obj.description} url={obj.url}
-                                          urlToImage={obj.urlToImage}/>
+                                <NewsItem source={obj.source} title={obj.title} description={obj.description}
+                                          url={obj.url} image={obj.image}/>
                             </Col>)}
 
                         </Row>
