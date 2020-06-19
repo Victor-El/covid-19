@@ -23,7 +23,7 @@ const getAllNews = async () => {
         // headers: {'Authorization': `Bearer ${process.env.REACT_APP_NEWS_API_KEY}`}
     });
 
-    return axiosInstance.get(`search?q=${REQUEST_QUERY}&token=${GNEWS_API_KEY}`).then((res) => {
+    return axiosInstance.get(`search?q=${REQUEST_QUERY}&image=required&token=${GNEWS_API_KEY}`).then((res) => {
         if (res.data != null && res.status === 200) {
             localStorage.setItem(LOCAL_STORAGE_NAME_FOR_NEWS_API, JSON.stringify(res.data));
             return res.data;
