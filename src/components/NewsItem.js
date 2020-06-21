@@ -18,7 +18,7 @@ class NewsItem extends Component {
                     <Card.Subtitle>{this.props.description}</Card.Subtitle>
                     <Card.Link target="_blank" href={this.props.url}>Read News</Card.Link>
                 </Card.Body>
-                <Card.Footer><Link target="_blank" to={this.props.source.url}>Visit site</Link></Card.Footer>
+                <Card.Footer><Card.Link target="_blank" href={this.props.source.url}>Visit site</Card.Link></Card.Footer>
             </Card>
         );
     }
