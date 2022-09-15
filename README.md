@@ -5,3 +5,5 @@
 [Live Site](https://coronavirus-tracker-app.netlify.app/ "COVID-19 Tracker")
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+![Home page image](https://user-images.githubusercontent.com/34776187/190351477-10c006bf-8ace-409f-b223-ea91e712b8f0.jpeg)
